@@ -1,4 +1,4 @@
-package Food;
+package FOOD;
 
 public class FoodList {
     

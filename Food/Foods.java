@@ -1,4 +1,4 @@
-package Food;
+package FOOD;
 
 public class Foods {
     protected String maFood;

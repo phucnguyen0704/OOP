@@ -1,6 +1,6 @@
-package ChuongTrai;
+package FARM;
 
-import Employee.NhanVien;
+import EMPLOYEE.NhanVien;
 
 public class ChuongBo extends ChuongTrai {
     private int SoLuongHienTai;

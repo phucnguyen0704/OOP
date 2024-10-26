@@ -2,13 +2,13 @@ import java.util.*;
 
 import javax.print.DocFlavor.STRING;
 
-import Animal.*;
-import Food.*;
-import Employee.*;
-import ChuongTrai.*;
+import ANIMAL.*;
+import FOOD.*;
+import EMPLOYEE.*;
+import FARM.*;
 import CheckStatusHistory.*;
 
-public class farm {
+public class MANAGE_FARM {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n, i, k;

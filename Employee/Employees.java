@@ -1,4 +1,4 @@
-package Employee;
+package EMPLOYEE;
 
 public abstract class Employees {
     protected String MaNV;

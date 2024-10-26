@@ -1,6 +1,6 @@
-package Animal;
+package ANIMAL;
 
-import Food.Grass;
+import FOOD.Grass;
 
 public class Cow extends Animals{
     private int SanLuongSua;

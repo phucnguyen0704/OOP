@@ -1,4 +1,4 @@
-package Food;
+package FOOD;
 
 public class Grass extends Foods {
     private String Status;

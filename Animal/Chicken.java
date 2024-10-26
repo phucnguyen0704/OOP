@@ -1,6 +1,6 @@
-package Animal;
+package ANIMAL;
 
-import Food.FoodofChick;
+import FOOD.FoodofChick;
 
 public class Chicken extends Animals{
     private int SoluongTrung;

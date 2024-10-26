@@ -1,4 +1,4 @@
-package Food;
+package FOOD;
 
 public class FoodofPig extends Foods {
     private String Status;

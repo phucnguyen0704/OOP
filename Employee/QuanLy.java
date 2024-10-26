@@ -1,6 +1,6 @@
-package Employee;
+package EMPLOYEE;
 
-import ChuongTrai.ChuongTrai;
+import FARM.ChuongTrai;
 
 public class QuanLy extends Employees {
     private String KhuVucQuanLy;
