@@ -10,10 +10,16 @@ public class Cow extends Animals{
 
     }
     
-    public Cow(String maVN, String name, String LoaiVN, int TrongLuong,int SoLuong, int SanLuongSua, Grass grass) {
+    public Cow(String maVN, String name, String LoaiVN, int TrongLuong, int SoLuong, int SanLuongSua, Grass grass) {
         super(name, maVN, LoaiVN, TrongLuong, SoLuong);
         this.SanLuongSua = SanLuongSua;
         this.grass = grass;
+    }
+    
+    public Cow(String maVN, String name, String LoaiVN, int TrongLuong,int SoLuong, int SanLuongSua) {
+        super(name, maVN, LoaiVN, TrongLuong, SoLuong);
+        this.SanLuongSua = SanLuongSua;
+        this.grass = null;
     }
 
     public void setSanLuongSua(int SanLuongSua) {
@@ -28,11 +34,14 @@ public class Cow extends Animals{
 
     @Override
     public String toString() {
-        if (getLoaiVN() == grass.getLoaiThucAn()) {
-            return String.format("%s        %s      %s      %s      %d      %d", maVN, name, LoaiVN, grass.getLoaiThucAn(), TrongLuong, SoLuong);
-        } else {
-            String loaithucan = "   ";
-            return String.format("%s        %s      %s      %s      %d      %d", maVN, name, LoaiVN, loaithucan, TrongLuong, SoLuong);
+        if (grass != null && getLoaiVN() == grass.getLoaiThucAn()) {
+            return String.format("%s        %s      %s      %s      %d      %d", maVN, name, LoaiVN,
+                    grass.getLoaiThucAn(), TrongLuong, SoLuong);
+        } else if(grass !=null){
+            return String.format("%s        %s      %s      %s      %d      %d", maVN, name, LoaiVN, " ", TrongLuong, SoLuong);
+        }
+        else {
+            return String.format("%s        %s      %s      %s      %d      %d", maVN, name, LoaiVN, " ", TrongLuong, SoLuong);
         }
     }
 

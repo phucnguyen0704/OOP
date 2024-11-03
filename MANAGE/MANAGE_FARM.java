@@ -1,4 +1,5 @@
 package MANAGE;
+
 import java.util.*;
 
 import javax.print.DocFlavor.STRING;
@@ -10,6 +11,40 @@ import FARM.*;
 import CheckStatusHistory.*;
 
 public class MANAGE_FARM {
+    public static void add(int n) {
+        Scanner input = new Scanner(System.in);
+        switch (n) {
+            case 1:
+                String s[] = new String[100];
+                System.out.println("Nhap ma vat nuoi: ");
+                input.nextLine();
+                s[0] = input.nextLine();
+
+                System.out.println("Nhap ten vat nuoi");
+                s[1] = input.nextLine();
+
+                System.out.println("Nhap loai vat nuoi");
+                s[2] = input.nextLine();
+
+                System.out.println("Nhap trong luong vat nuoi(kg): ");
+                s[3] = input.nextLine();
+
+                System.out.println("Nhap so luong vat nuoi: ");
+                s[4] = input.nextLine();
+
+                int s3 = Integer.parseInt(s[3]);
+                int s4 = Integer.parseInt(s[4]);
+
+                Cow Bo = new Cow(s[0], s[1], s[2], s3, s4, 1000);
+                System.out.println(Bo.toString());
+                break;
+
+            case 2:
+                System.out.println("Loi");
+                break;
+        }
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n, i, k;
@@ -55,24 +90,7 @@ public class MANAGE_FARM {
                         k = input.nextInt();
                         switch (k) {
                             case 1:
-                                String s[] = new String[100];
-                                System.out.println("Nhap ma vat nuoi: ");
-                                input.nextInt();
-                                s[0] = input.nextLine();
-
-                                System.out.println("Nhap ten vat nuoi");
-                                s[1] = input.nextLine();
-
-                                System.out.println("Nhap loai vat nuoi");
-                                s[2] = input.nextLine();
-
-                                System.out.println("Nhap trong luong vat nuoi(kg): ");
-                                s[3] = input.nextLine();
-
-                                System.out.println("Nhap so luong vat nuoi: ");
-                                s[4] = input.nextLine();
-
-                                // Cow Bo = new Cow(s[0], s[1], s[2], s[3], s[4], null, null);
+                                add(n);
                                 break;
 
                             default:
@@ -96,6 +114,12 @@ public class MANAGE_FARM {
 
                 System.out.print("          Nhap lua chon cua ban: ");
                 i = input.nextInt();
+                switch (i) {
+                    case 1:
+                        add(n);
+                        break;
+                }
+
                 break;
             }
         }
