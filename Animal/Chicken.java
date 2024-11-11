@@ -32,17 +32,22 @@ public class Chicken extends Animals{
     }
 
     @Override
+    public int getSanLuongThit() {
+        return TrongLuong * SoLuong;
+    }
+
+    @Override
     public String toString() {
         if (chick != null && getLoaiVN() == chick.getLoaiThucAn()) {
-            return String.format("%s        %s      %s      %s      %d      %d", maVN, name, LoaiVN,
-                    chick.getLoaiThucAn(), TrongLuong, SoLuong);
+            return String.format("%s        %s      %s      %s      %d      %d      %d", maVN, name, LoaiVN,
+                    chick.getLoaiThucAn(), TrongLuong, SoLuong, SoluongTrung);
         } else if (chick != null) {
-            return String.format("%s        %s      %s      %s      %d      %d", maVN, name, LoaiVN, " ",
-                    TrongLuong, SoLuong);
+            return String.format("%s        %s      %s      %s      %d      %d      %d", maVN, name, LoaiVN, " ",
+                    TrongLuong, SoLuong, SoluongTrung);
         } 
         else {
-            return String.format("%s        %s      %s      %s      %d      %d", maVN, name, LoaiVN, " ",
-                    TrongLuong, SoLuong);
+            return String.format("%s        %s      %s      %s      %d      %d      %d", maVN, name, LoaiVN, " ",
+                    TrongLuong, SoLuong, SoluongTrung);
         }
     }
 }

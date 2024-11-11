@@ -9,6 +9,12 @@ public class Pig extends Animals{
 
     }
 
+    public Pig(String name, String maVN, String LoaiVN, int TrongLuong,int SoLuong, int SanLuongThit) {
+        super(name, maVN, LoaiVN, TrongLuong, SoLuong);
+        this.SanLuongThit = SanLuongThit;
+        this.food = null;
+    }
+
     public Pig(String name, String maVN, String LoaiVN, int TrongLuong,int SoLuong, int SanLuongThit, FoodofPig food) {
         super(name, maVN, LoaiVN, TrongLuong, SoLuong);
         this.SanLuongThit = SanLuongThit;
@@ -18,18 +24,20 @@ public class Pig extends Animals{
     public void setSanLuongThit(int SanLuongThit) {
         this.SanLuongThit = SanLuongThit;
     }
-
+    @Override
     public int getSanLuongThit() {
         return SanLuongThit;
     }
 
-    @Override
     public String toString() {
-        if (getLoaiVN() == food.getLoaiThucAn()) {
-            return String.format("%s        %s      %s      %s      %d      %d", maVN, name, LoaiVN, food.getLoaiThucAn(), TrongLuong, SoLuong);
-        } else {
-            String loaithucan = "";
-            return String.format("%s        %s      %s      %s      %d      %d", maVN, name, LoaiVN, loaithucan, TrongLuong, SoLuong);
+        if (food != null && getLoaiVN() == food.getLoaiThucAn()) {
+            return String.format("%s        %s      %s      %s      %d      %d      %d", maVN, name, LoaiVN,
+                    food.getLoaiThucAn(), TrongLuong, SoLuong, SanLuongThit);
+        } else if(food !=null){
+            return String.format("%s        %s      %s      %s      %d      %d      %d", maVN, name, LoaiVN, " ", TrongLuong, SoLuong, SanLuongThit);
+        }
+        else {
+            return String.format("%s        %s      %s      %s      %d      %d      %d", maVN, name, LoaiVN, " ", TrongLuong, SoLuong, SanLuongThit);
         }
     }
 }
