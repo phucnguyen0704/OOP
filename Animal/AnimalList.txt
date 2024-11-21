@@ -1,0 +1,14 @@
+Ma vat nuoi: Bo01
+Ten vat nuoi: Bo sua
+Loai vat nuoi: Bo
+Trong luong vat nuoi: 100
+So luong vat nuoi: 100
+San luong thit cua vat nuoi: 8000
+
+Ma vat nuoi: Ga01
+Ten vat nuoi: Ga ta
+Loai vat nuoi: Ga
+Trong luong vat nuoi: 2
+So luong vat nuoi: 20
+San luong thit cua vat nuoi: 40
+

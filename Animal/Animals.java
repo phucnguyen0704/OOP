@@ -68,4 +68,9 @@ public abstract class Animals {
     public String toString() {
         return String.format("%s        %s      %s      %d      %d", maVN, name, LoaiVN, TrongLuong, SoLuong);
     }
+
+    public String toStringExport() {
+        return String.format("%s        %s      %s      %d      %d", maVN, name, LoaiVN, TrongLuong, SoLuong);
+    }
+    
 }
