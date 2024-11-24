@@ -1,14 +1,14 @@
 package FOOD;
 
-public class FoodofChick extends Foods{
+public class FoodofCow extends Foods {
     private String Status;
     private static int count = 1;
 
-    public FoodofChick() {
+    public FoodofCow() {
 
     }
-    
-    public FoodofChick(String name, String TypeofFood, int Quantity, String Status) {
+
+    public FoodofCow(String name, String TypeofFood, int Quantity, String Status) {
         super(name, TypeofFood, Quantity);
         this.Status = Status;
     }
@@ -25,11 +25,14 @@ public class FoodofChick extends Foods{
 
     @Override
     public String createFoodID() {
-        return "FCH" + (count++);
+        return "FOC" + (count++);
     }
+
 
     @Override
     public String toString() {
-        return String.format("%-14s %-20s %-15s %-15d %-15s", getFoodID(), name, TypeofFood, Quantity, getStatus());
+        return String.format("%-14s %-20s %-15s %-15d %-15s", FoodID, name, TypeofFood, Quantity, getStatus());
     }
 }
+
+

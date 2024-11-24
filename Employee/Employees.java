@@ -1,58 +1,72 @@
 package EMPLOYEE;
 
 public abstract class Employees {
-    protected String MaNV;
-    protected String HoTen;
-    protected String NgaySinh;
-    protected String GioiTinh;
-    protected String ChucVu;
+    protected String EmployeeID;
+    protected String FullName;
+    protected String DateofBirth;
+    protected String Gender;
+    protected String Position;
 
     public Employees() {
 
     }
     
-    public Employees(String MaNV, String HoTen, String NgaySinh, String GioiTinh, String ChucVu) {
-        this.MaNV = MaNV;
-        this.HoTen = HoTen;
-        this.NgaySinh = NgaySinh;
-        this.GioiTinh = GioiTinh;
-        this.ChucVu = ChucVu;
+    public Employees(String FullName, String DateofBirth, String Gender, String Position) {
+        this.EmployeeID = createEmployeeID();
+        this.FullName = FullName;
+        this.DateofBirth = DateofBirth;
+        this.Gender = Gender;
+        this.Position = Position;
     }
 
-    public void setMaNV(String MaNV) {
-        this.MaNV = MaNV;
+    public void setEmployeeID(String EmployeeID) {
+        this.EmployeeID = EmployeeID;
     }
 
-    public void setHoTen(String HoTen) {
-        this.HoTen = HoTen;
+    public void setFullName(String FullName) {
+        this.FullName = FullName;
     }
 
-    public void setGioiTinh(String GioiTinh) {
-        this.GioiTinh = GioiTinh;
+    public void setGender(String Gender) {
+        this.Gender = Gender;
     }
 
-    public void setChucVu(String ChucVu) {
-        this.ChucVu = ChucVu;
+    public void setPosition(String Position) {
+        this.Position = Position;
     }
 
-    public String getMaNV() {
-        return MaNV;
+    public void setDateofBirth(String DateofBirth) {
+        this.DateofBirth = DateofBirth;
     }
 
-    public String getHoTen() {
-        return HoTen;
+    public String getEmployeeID() {
+        return EmployeeID;
     }
 
-    public String getNgaySinh() {
-        return NgaySinh;
+    public String getFullName() {
+        return FullName;
     }
 
-    public String getGioiTinh() {
-        return GioiTinh;
+    public String getDateofBirth() {
+        return DateofBirth;
     }
 
-    public String getChucVu() {
-        return ChucVu;
+    public String getGender() {
+        return Gender;
     }
 
+    public String getPosition() {
+        return Position;
+    }
+
+    public abstract String getWorkPlace();
+
+    public abstract void setWorkPlace(String WorkPlace);
+
+    public abstract String createEmployeeID();
+
+    @Override
+    public String toString() {
+        return String.format("%-14s %-20s %-15s %-15s %-15s %-15s", getEmployeeID(), FullName, DateofBirth, Gender, Position, getWorkPlace());
+    }    
 }

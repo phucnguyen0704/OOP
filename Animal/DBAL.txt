@@ -1,2 +1,2 @@
-Bo01,Bo sua,Bo,100,100
-Ga01,Ga ta,Ga,2,20
+Bo sua,Bo,100,100
+Ga ta,Ga,2,20

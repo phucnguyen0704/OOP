@@ -1,0 +1,21 @@
+Ma nhan vien: NV1
+Ho va ten: Nguyen Hoang Phuc
+Ngay sinh: 07/04/2004
+Gioi tinh: Nam
+Chuc vu: Nhan Vien
+Khu vuc lam viec: Chuong Bo
+
+Ma nhan vien: QL1
+Ho va ten: Nguyen Thi Luu
+Ngay sinh: 21/09/2004
+Gioi tinh: Nu
+Chuc vu: Quan Ly
+Khu vuc lam viec: Phong nhan su
+
+Ma nhan vien: QL2
+Ho va ten: Nguyen Van A
+Ngay sinh: 6/6/2003
+Gioi tinh: Nam
+Chuc vu: Quan Ly kho
+Khu vuc lam viec: Khu A
+

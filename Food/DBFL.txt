@@ -1,0 +1,4 @@
+Thuc an tinh hon hop,Thuc an cho bo,100,Chua su dung
+Thuc an ga C235,Thuc an cho ga,25,Chua su dung
+Thuc an hon hop BG2,Thuc an cho lon,100,Chua su dung
+Co voi,Thuc an cho bo,100,Co tuoi

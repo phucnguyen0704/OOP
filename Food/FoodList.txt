@@ -1,0 +1,24 @@
+Ma thuc an: FOC1
+Ten thuc an: Thuc an tinh hon hop
+Loai thuc an: Thuc an cho bo
+So luong: 100
+Tinh trang: Chua su dung
+
+Ma thuc an: FCH1
+Ten thuc an: Thuc an ga C235
+Loai thuc an: Thuc an cho ga
+So luong: 25
+Tinh trang: Chua su dung
+
+Ma thuc an: FOP1
+Ten thuc an: Thuc an hon hop BG2
+Loai thuc an: Thuc an cho lon
+So luong: 100
+Tinh trang: Chua su dung
+
+Ma thuc an: FOC2
+Ten thuc an: Co voi
+Loai thuc an: Thuc an cho bo
+So luong: 100
+Tinh trang: Co tuoi
+

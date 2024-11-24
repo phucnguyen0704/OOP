@@ -1,59 +1,61 @@
 package FOOD;
 
-public class Foods {
-    protected String maFood;
+public abstract class Foods {
+    protected String FoodID;
     protected String name;
-    protected String LoaiThucAn;
-    protected int SoLuong;
+    protected String TypeofFood;
+    protected int Quantity;
 
     public Foods() {
 
     }
 
-    public Foods(String maFood, String name, String LoaiThucAn, int SoLuong) {
-        this.maFood = maFood;
+    public Foods(String name, String TypeofFood, int Quantity) {
+        this.FoodID = createFoodID();
         this.name = name;
-        this.LoaiThucAn = LoaiThucAn;
-        this.SoLuong = SoLuong;
+        this.TypeofFood = TypeofFood;
+        this.Quantity = Quantity;
     }
 
-    public void setMaFood(String maFood) {
-        this.maFood = maFood;
+    public void setFoodID(String FoodID) {
+        this.FoodID = FoodID;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setLoaiThucAn(String LoaiThucAn) {
-        this.LoaiThucAn = LoaiThucAn;
+    public void setTypeofFood(String TypeofFood) {
+        this.TypeofFood = TypeofFood;
     }
 
-    public void setSoLuong(int SoLuong) {
-        this.SoLuong = SoLuong;
+    public void setQuantity(int Quantity) {
+        this.Quantity = Quantity;
     }
 
-    public String getMaFood() {
-        return maFood;
+    public String getFoodID() {
+        return FoodID;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getLoaiThucAn() {
-        return LoaiThucAn;
+    public String getTypeofFood() {
+        return TypeofFood;
     }
 
-    public int getSoLuong() {
-        return SoLuong;
+    public int getQuantity() {
+        return Quantity;
     }
 
-    public String CheckStatusFood() {
-        return "";
-    }
+    public abstract String createFoodID();
+
+    public abstract void setStatus(String Status);
+
+    public abstract String getStatus();
 
     public String toString() {
-        return String.format("%s        %s      %s      %d", maFood, name, LoaiThucAn, SoLuong, CheckStatusFood());
+        return String.format("%-14s %-20s %-15s %-15d %-15s", getFoodID(), name, TypeofFood, Quantity, getStatus());
     }
 }

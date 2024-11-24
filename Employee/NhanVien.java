@@ -3,22 +3,30 @@ package EMPLOYEE;
 
 
 public class NhanVien extends Employees {
-    private String KhuVucLamViec;
+    private String WorkPlace;
+    private static int count = 1;
 
     public NhanVien() {
 
     }
     
-    public NhanVien(String MaNV, String HoTen, String NgaySinh, String GioiTinh, String ChucVu, String KhuVucLamViec) {
-        super(MaNV, HoTen, NgaySinh, GioiTinh, ChucVu);
-        this.KhuVucLamViec = KhuVucLamViec;
+    public NhanVien(String FullName, String DateofBirth, String Gender, String Position, String WorkPlace) {
+        super(FullName, DateofBirth, Gender, Position);
+        this.WorkPlace = WorkPlace;
     }
 
-    public void setKhuVucLamViec(String KhuVucLamViec) {
-        this.KhuVucLamViec = KhuVucLamViec;
+    @Override
+    public void setWorkPlace(String WorkPlace) {
+        this.WorkPlace = WorkPlace;
     }
 
-    public String getKhuVucLamViec() {
-        return KhuVucLamViec;
+    @Override
+    public String getWorkPlace() {
+        return WorkPlace;
+    }
+
+    @Override
+    public String createEmployeeID() {
+        return "NV"+(count++);
     }
 }

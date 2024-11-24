@@ -1,0 +1,30 @@
+Ma san pham: PD1
+Ten san pham: Sua bo
+Loai san pham: Sua Bo
+So luong: 1000
+Han su dung: 12/4/2025
+
+Ma san pham: 
+Ten san pham: 
+Loai san pham: 
+So luong: 1000
+Han su dung: 
+
+Ma san pham: PD3
+Ten san pham: Sua bo
+Loai san pham: Sua Bo
+So luong: 1000
+Han su dung: 12/4/2025
+
+Ma san pham: PD4
+Ten san pham: Sua bo
+Loai san pham: Sua Bo
+So luong: 1000
+Han su dung: 12/4/2025
+
+Ma san pham: PD5
+Ten san pham: Sua tuoi
+Loai san pham: Sua bo
+So luong: 100
+Han su dung: 10/10/10
+

@@ -1,0 +1,36 @@
+Ma chuong trai: CB1
+Ten chuong trai: Chuong Bo
+Suc chua: 100
+Vi tri: Khu A
+Trang thai hien tai: Chuong con trong cho
+
+Ma chuong trai: CB2
+Ten chuong trai: Chuong Bo
+Suc chua: 100
+Vi tri: Khu A
+Trang thai hien tai: Chuong con trong cho
+
+Ma chuong trai: CB3
+Ten chuong trai: Chuong Bo
+Suc chua: 100
+Vi tri: Khu A
+Trang thai hien tai: Chuong con trong cho
+
+Ma chuong trai: CB4
+Ten chuong trai: Chuong Bo
+Suc chua: 100
+Vi tri: Khu A
+Trang thai hien tai: Chuong con trong cho
+
+Ma chuong trai: CB5
+Ten chuong trai: Chuong Bo
+Suc chua: 100
+Vi tri: Khu A
+Trang thai hien tai: Chuong con trong cho
+
+Ma chuong trai: CB6
+Ten chuong trai: Chuong Bo sua
+Suc chua: 10
+Vi tri: Khu B
+Trang thai hien tai: Chuong con trong cho
+

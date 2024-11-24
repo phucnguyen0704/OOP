@@ -2,15 +2,15 @@ package INTERFACE;
 
 public interface chucnang<T> {
 
-    public void them(T item);
+    public void add(T item);
 
     public void Show();
 
-    public void remove(String maVN);
+    public void remove(String AnID);
 
     public void Search(String name);
 
-    public void edit(String maVN);
+    public void edit(String AnID);
 
     public void export();
 

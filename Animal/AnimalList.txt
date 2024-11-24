@@ -1,14 +1,14 @@
-Ma vat nuoi: Bo01
+Ma vat nuoi: COW1
 Ten vat nuoi: Bo sua
 Loai vat nuoi: Bo
-Trong luong vat nuoi: 100
-So luong vat nuoi: 100
-San luong thit cua vat nuoi: 8000
+Trong luong vat nuoi (kg): 100
+So luong vat nuoi (con): 100
+San luong thit cua vat nuoi (kg): 6000.0
 
-Ma vat nuoi: Ga01
+Ma vat nuoi: CHI1
 Ten vat nuoi: Ga ta
 Loai vat nuoi: Ga
-Trong luong vat nuoi: 2
-So luong vat nuoi: 20
-San luong thit cua vat nuoi: 40
+Trong luong vat nuoi (kg): 2
+So luong vat nuoi (con): 20
+San luong thit cua vat nuoi (kg): 20.0
 
